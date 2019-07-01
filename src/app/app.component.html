@@ -1,7 +1,16 @@
-<app-login-module></app-login-module>
+<!-- <app-login-module></app-login-module>
 
 <h1> my directive start here</h1>
 <app-my-directive></app-my-directive>
 
 <p> With out directive</p>
-<p appColorchange>with directive</p>
+<p appColorchange>with directive</p> -->
+
+<h1>List Data By Using Service</h1>
+<table>
+	<tr *ngFor="let item of totalList;">
+		<td>{{item.color}}</td><td>{{item.value}}</td>
+	</tr>
+</table>
+
+<button (click)="IncrementData()">Increment List Data</button>

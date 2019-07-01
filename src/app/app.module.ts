@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginModuleComponent } from './login-module/login-module.component';
 import { MyDirectiveComponent } from './my-directive/my-directive.component';
 import { ColorchangeDirective } from './colorchange.directive';
+import { MyListService } from './my-list.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { ColorchangeDirective } from './colorchange.directive';
   imports: [
     BrowserModule, FormsModule
   ],
-  providers: [],
+  providers: [MyListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

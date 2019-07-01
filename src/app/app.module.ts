@@ -4,11 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginModuleComponent } from './login-module/login-module.component';
+import { MyDirectiveComponent } from './my-directive/my-directive.component';
+import { ColorchangeDirective } from './colorchange.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginModuleComponent
+    LoginModuleComponent,
+    MyDirectiveComponent,
+    ColorchangeDirective
   ],
   imports: [
     BrowserModule, FormsModule
